@@ -39,11 +39,15 @@ console.log(newArray2)
 let languages = ['html', 'css', 'javascript', 'python', 'php'].filter(x => x.length > 3);
 console.log(languages);
 
-// 6.
+// 6.1
 let acad = ['academy', 'of', 'digital', 'industries'].reduce((result, value) => {
     return result + value;
 })
 console.log(acad)
+
+// 6.2
+let acad2 = ['academy', 'of', 'digital', 'industries'].map(x => x.charAt(0).toUpperCase() + x.substring(1));
+console.log(acad2.join(' '));
 
 // 7.
 let item = [12, 'google', 32, null, 'yahoo', 25];
